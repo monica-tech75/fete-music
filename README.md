@@ -1,7 +1,7 @@
 # Distribution des taches
 
 todo list
-1. NavBar (logo barnav)
+1. NavBar (logo barnav boutton/lien, article 1 et 2)
 2. Header (h1- p-bgimg)
 3. 2 * Article (h2-img-p)
 3.5 
