@@ -1,5 +1,5 @@
 
-export default function Hamburger({i}) {
+export default function Hamburger() {
     return (
         <>
 

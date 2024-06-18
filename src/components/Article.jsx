@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react"
 
 import "../styles/articleStyle.css"
@@ -9,14 +10,10 @@ export default function Article ({groupe}) {
     function handleClickFollowed () {
        setIsFollowed(!isFollowed);
     }
-
-        // const handleClickFavorite = () => {
-        
-        //     setIsFavorite(!isFavorite);
     return (
 
         <>
-        <div className="Container">
+        <div className="container">
             <div>
               <img src={groupe.image} alt={groupe.name} />  
             </div>

@@ -3,12 +3,14 @@ img {
     padding: 1rem;
 }
 
-.Container {
+.container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border: 2px solid black;
     margin: 1rem;
     background-color:   rgb(225, 227, 228);
+    text-align: center;
 }
 
 .btn-suivre {

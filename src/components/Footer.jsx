@@ -1,7 +1,9 @@
 import { FaFacebook } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
-import { PiVideoCameraFill } from "react-icons/pi";
+import "../styles/footerStyle.css"
+
+
 function Footer() {
   return (
     <footer>
