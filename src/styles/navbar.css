@@ -10,12 +10,4 @@ navbar {
     height: 1rem;
     display: flex;
   }
-  
-  ul {
-    display: flex;
- 
-}
 
-ul > li {
-    list-style: none;
-  }
