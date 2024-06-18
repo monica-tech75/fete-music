@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.header div {
+header {
   background-image: url("C:\Users\utilisateur1\Desktop\fete-music\src\assets\Affiche fete de la musique.jpeg");
   height: 75svh;
   background-size: cover;
@@ -42,11 +42,16 @@ flex-direction: column;
 padding: 1rem;
 }
 
+.contact h2 {
+  text-align: center;
+}
+
 .nous-suivre {
   display: flex;
   align-items: center;
   
 }
+
 
 h1,p {
   text-align: center;
