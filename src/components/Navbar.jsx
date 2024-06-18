@@ -1,66 +1,43 @@
-import Hamburger from "./Hamburger.jsx";
+import { useState } from "react";
+import Hamburger from "./Hamburger"
+import Menuclassic from "./Menuclassic";
+export default function Navbar() {
 
-function Navbar() {
+
+    // const [hamburgerOpen, setHamburgerOpen] = useState(false);
+    // const toggleHamburger = () => {
+    //     setHamburgerOpen(!hamburgerOpen)
+    // }
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const isMobile = windowWidth < 768;
+    console.log(isMobile)
+    console.log(window.innerWidth)
+
+    function handleWindow (){
+        (setWindowWidth(!isMobile))
+    }
     return (
         <div className='navbar'>
             <img src="https://storage.googleapis.com/is-wp-46-prod/uploads-prod/2024/06/5c9c957d-bulle-site-internet-test-2.png" alt="logo fête de la musique" className='logo' />
-            <ul>
-                <a href="#!">home</a>
-                <a href="#!">contact</a>
-                <a href="#!">login</a>
-            </ul>
+
+            {isMobile ? <Hamburger /> : <Menuclassic />}
+
         </div>
+        // en mobile je veux voir le burger et en desktop le burger disparait et montre les listes stylisées (home, contact, login)
+
+        //     <div onClick={toggleHamburger} className="hamburger">
+        //          {isMobile ? <Hamburger /> : <Menuclassic />}
+        //     </div>
+        // 
+
     )
 }
-<style jsx>{`
-    .navigation{
-        width: 100%;
-    height: 50px;
-    background-color: blue;
-   
-}
-
-    .navigation ul{
-        display: flex;
-    flex-wrap: wrap;
-    float: right;
-    margin: 20 0px;
-    padding: 0 25px;
-}
-
-    .navigation ul li{
-        padding: 10px;
-        list-style-type: none;
-    }
-   
-    .hamburger{
-        display: none;
-        z-index: 6;
-    } 
 
 
-    @media (max-width: 767px){
-      
-        .hamburger{
-            display:fixed;
-            padding-top: 10px;
-            margin-left: 10px;
-            z-index: 6;
-        }
+/*const menuItems= [home, contact,login]
+windowWidth
+const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+const isMobile = windowWidth < 768;
+isMobile ? <MenuHamburger /> : <MenuClassique />
 
-    
-       
-        .navigation ul{
-            display: ${hamburgerOpen ? 'inline' : 'none'};
-            background-color: blue;
-            height: 100vh;
-            width: 50vw;
-            margin-top: 50px;
-            position: fixed;
-            
-
-        }
-    }
-`}</style>
-
-export default Navbar
+window.innerwidth < 768 ? <MenuHamburger /> : <MenuClassique />*/
