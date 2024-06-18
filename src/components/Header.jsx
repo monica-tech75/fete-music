@@ -1,7 +1,9 @@
 function Header() {
   return (
     <header className="header">
-      <div></div>
+      <div>
+        {/* <img src="src\assets\Affiche fete de la musique.jpeg" alt="" /> */}
+      </div>
     </header>
   );
 }
