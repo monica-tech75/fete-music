@@ -5,8 +5,8 @@
 }
 
 .header div {
-  background-image: url("https://www.education.gouv.fr/sites/default/files/styles/image_box/public/2024-06/affiche-fdlm-2024---f-te-de-la-musique-114584.jpg?itok=_PRP7tjJ");
-  height: 50svh;
+  background-image: url("C:\Users\utilisateur1\Desktop\fete-music\src\assets\Affiche fete de la musique.jpeg");
+  height: 75svh;
   background-size: cover;
 }
 
@@ -15,6 +15,7 @@ footer {
   justify-content: space-around;
   background-color: rgb(83,165,128);
   padding: 1rem;
+  width: 100svw;
 }
 
 section {

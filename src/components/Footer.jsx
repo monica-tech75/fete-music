@@ -26,8 +26,8 @@ function Footer() {
       <section className="contact">
         <h2>CONTACT</h2>
         <p>
-          Pour toute question ou information sur la Fête de la Musique,
-          n'hésitez pas à nous contacter. Accédez au formulaire de contact.
+          Pour toute question ou information sur la Fête de la Musique,n'hésitez
+          pas à nous contacter. Accédez au formulaire de contact.
         </p>
       </section>
 
