@@ -1,0 +1,13 @@
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: lightblue;
+  }
+  
+  navbar > logo {
+    height: 1rem;
+    display: flex;
+  }
+
